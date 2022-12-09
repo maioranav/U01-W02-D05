@@ -83,8 +83,11 @@ const cars = [
 
 console.log("------------- ESERCIZIO 5 -------------");
 
+let targa = 0;
+
 for (let i = 0; i < cars.length; i++) {
-  cars[i].licensePlate = "BA123XX";
+  targa = Math.floor(Math.random() * (800 - 123) + 123);
+  cars[i].licensePlate = "BA" + targa + "XX";
 }
 
 console.log(cars);
@@ -102,7 +105,7 @@ const nuovaMacchina = {
   model: "A3",
   color: "Silver",
   trims: ["sportback", "elegance", "s-line"],
-  licensePlate: "BA123XX",
+  licensePlate: "DP333BM",
 };
 
 cars.push(nuovaMacchina); //inserisco il nuovo oggetto alla fine dell'array
