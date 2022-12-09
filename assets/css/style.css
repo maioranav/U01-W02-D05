@@ -1,3 +1,138 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
+  color: #171717;
+  width: 100vw;
+  background-color: #e9ecee;
+}
+main {
+  width: 100%;
+}
+img {
+  width: 100%;
+}
+.bg-darker {
+  background-color: #293342;
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: #457377;
+}
+a:hover {
+  color: #ff9900;
+}
+.bg-dark {
+  background-color: #35495a;
+  color: #eaeded;
+}
+.bg-dark a {
+  color: white;
+}
+.bg-dark a:hover {
+  color: #ff9900;
+}
+.bg-orange {
+  color: white;
+  background-color: #ff7b00;
+}
+.bg-white {
+  background-color: white;
+}
+.text-center {
+  text-align: center;
+}
+ul {
+  margin: 0;
+  padding: 0 20px;
+}
+ul > li {
+  list-style: none;
+  display: inline-block;
+  margin: 0.5em 0.8em;
+}
+.logo {
+  height: 3em;
+  width: auto;
+  padding: 0.5em 20px;
+}
+section {
+  margin: 0.7em auto;
+  width: 90%;
+  padding: 10px 20px;
+}
+.giftcards {
+  font-weight: 500;
+  width: 92%;
+}
+.giftcards h3 {
+  padding: 0.5em;
+}
+.guides {
+  background: url(../img/bg-image.png);
+  background-size: contain;
+  height: 23vh;
+  color: white;
+  font-size: 150%;
+}
+.guides h2 {
+  margin-top: 1.2em;
+}
+.giftideas {
+  padding: 20px 20px;
+  width: 90%;
+}
+.sectiontitling h2,
+.sectiontitling h3 {
+  display: inline-block;
+  margin: 0em 0.5em;
+  padding: 0;
+}
+.sectiontitling h2 {
+  font-weight: 500;
+  margin-left: 0.2em;
+}
+.card p {
+  display: none;
+}
+.card {
+  width: 23%;
+  height: 55vh;
+  display: inline-block;
+  margin: 1em 1em;
+  border-radius: 15% 15% 15% 15% / 10% 10% 10% 10%;
+  box-shadow: 5.5px 8.5px 5.5px 2px #dddddd;
+}
+#card1 {
+  background: url(../img/img_1.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-left: 0.4em;
+}
+#card2 {
+  background: url(../img/img_2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#card3 {
+  background: url(../img/img_3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#card4 {
+  background: url(../img/img_4.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.fwshopcat {
+  width: 92%;
+}
+.gotop h5 {
+  font-size: 130%;
+  padding: 15px;
+  text-decoration: underline;
+}
+.footerimgsect {
+  width: 12vw;
+  margin: auto;
+  padding: 5em;
 }
