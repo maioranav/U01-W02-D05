@@ -13,6 +13,8 @@ console.log("------------- ESERCIZIO 1 -------------");
 
 const pets = ["dog", "cat", "hamster", "redfish"];
 
+//console.log(pets);     //è possibile stampare l'intero Array così ma l'esercizio chiede OGNI ELEMENTO (suppongo uno per volta)
+
 for (let i = 0; i < pets.length; i++) {
   console.log(pets[i]);
 }
@@ -23,13 +25,13 @@ for (let i = 0; i < pets.length; i++) {
 
 console.log("------------- ESERCIZIO 2 -------------");
 
-const petsSorted = [];
+const petsSorted = []; //creo un nuovo array per lasciare integro "pets" per successivi utilizzi
 
 for (let i = 0; i < pets.length; i++) {
   petsSorted.push(pets[i]);
-  petsSorted.sort();
 }
 
+petsSorted.sort();
 console.log(petsSorted);
 
 /* ESERCIZIO 3
@@ -82,7 +84,7 @@ const cars = [
 console.log("------------- ESERCIZIO 5 -------------");
 
 for (let i = 0; i < cars.length; i++) {
-  cars[i].licensePlate = "B";
+  cars[i].licensePlate = "BA123XX";
 }
 
 console.log(cars);
@@ -95,16 +97,18 @@ console.log(cars);
 console.log("------------- ESERCIZIO 6 -------------");
 
 const nuovaMacchina = {
+  //creo il nuovo oggetto rispettandone la struttura di quelli esistenti
   brand: "Audi",
   model: "A3",
   color: "Silver",
   trims: ["sportback", "elegance", "s-line"],
-  licensePlate: "B",
+  licensePlate: "BA123XX",
 };
 
-cars.push(nuovaMacchina);
+cars.push(nuovaMacchina); //inserisco il nuovo oggetto alla fine dell'array
 
 for (let i = 0; i < cars.length; i++) {
+  //rimuovo da ogni elemento dell'array l'ultimo indice dell'array presente nella proprietà trims
   cars[i].trims.pop();
 }
 
@@ -118,6 +122,7 @@ const justTrims = [];
 console.log("------------- ESERCIZIO 7 -------------");
 
 for (let i = 0; i < cars.length; i++) {
+  //leggo il primo valore della proprietà trims di ogni oggetto nell'array per inserirlo in un nuovo array
   justTrims.push(cars[i].trims[0]);
 }
 
@@ -149,6 +154,7 @@ console.log("------------- ESERCIZIO 9 -------------");
 let whileIndex = 0;
 
 while (whileIndex < numericArray.length) {
+  //utilizzo un indice chiamato whileIndex per spostarmi nell'array ad ogni iterazione, e con un IF statement indico che raggiunto il valore stabilito interrompo il ciclo while imponendo un break
   console.log(numericArray[whileIndex]);
   if (numericArray[whileIndex] === 32) {
     break;
@@ -161,9 +167,13 @@ while (whileIndex < numericArray.length) {
     dell'alfabeto italiano.
     es. [f, b, e] --> [6, 2, 5]
 
+utilizzando switch determino il numero corrispondente alla lettera e analizzo l'array per pushare il numero corrispondente dentro il nuovo array nella medesima posizione di quello di partenza
 
-    A B C D E F G H I L M N O P Q R S T U V Z
-    1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+/* numerazione utilizzata */
+
+/*
+    A B C D E F G H I L  M  N  O  P  Q  R  S  T  U  V  Z
+    1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21
 
 */
 const charactersArray = ["g", "n", "u", "z", "d"];
