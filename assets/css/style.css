@@ -129,7 +129,12 @@ section {
 .gotop h5 {
   font-size: 130%;
   padding: 15px;
+}
+.gotop a {
   text-decoration: underline;
+}
+.gotop a:hover {
+  color: #ff7b00;
 }
 .footerimgsect {
   width: 12vw;
